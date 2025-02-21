@@ -3,14 +3,25 @@ body {
   margin: 0;
   padding: 0;
   color: #f5f5f5;
-  background: linear-gradient(
+  background-color: #010101;
+  /* background: linear-gradient(
     to bottom,
-    #18122b,
-    #393053,
-    #393053,
-    #635985,
-    #393053
-  );
+    #010101,
+    #1a1a1a,
+    #010439
+  ); */
+}
+
+#background-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1; 
+  transform: translate(-50%, -50%); 
 }
 
 header {
