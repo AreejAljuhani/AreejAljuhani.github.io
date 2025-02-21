@@ -71,18 +71,20 @@ nav a:hover {
   font-size: 100px;
   margin-bottom: 20px;
   text-transform: uppercase;
-  text-shadow: 4px 4px 13px rgb(44, 44, 44);
+  text-shadow: 4px 4px 16px rgba(179, 179, 179,0.4);
 }
 
 #about p {
   font-size: 18px;
   line-height: 1.6;
   margin-bottom: 30px;
+  text-shadow: 4px 4px 13px rgb(44, 44, 44);
 }
 
-#about button {
+.cv-button {
   background-color: transparent;
   font-size: 18px;
+  text-decoration: none;
   padding: 17px 40px;
   border: 1px solid white;
   color: white;
@@ -92,19 +94,19 @@ nav a:hover {
     background-color 0.3s ease;
 }
 
-#about button .arrow {
+.cv-button .arrow {
   margin-left: 10px;
   transition: margin-left 0.3s ease;
 }
 
-#about button:hover {
+.cv-button:hover {
   background-color: #dfdfdf;
   color: black;
   box-shadow: 0 8px 20px rgba(211, 211, 211, 0.5);
   transform: scale(1.005);
 }
 
-#about button:hover .arrow {
+.cv-button:hover .arrow {
   margin-left: 20px;
 }
 
