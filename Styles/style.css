@@ -118,7 +118,7 @@ nav a:hover {
   text-align: center;
 }
 
-#projects h1 , #certifications h1 {
+#projects h1 , #certifications h1 , #skills h1{
   font-size: 30px;
   margin-bottom: 40px;
   text-transform: uppercase;
@@ -193,9 +193,6 @@ nav a:hover {
   margin: 5px;
 }
 
-
-/*  */
-
 #certifications {
   padding: 20px;
   text-align: center;
@@ -206,13 +203,13 @@ nav a:hover {
   grid-template-columns: repeat(3, 1fr); 
   gap: 20px; 
   justify-content: center;
-  margin: 10px 90px;
+  margin: 10px 170px;
 }
 
 .certification-item {
-  margin: 20px 20px;
-  height: 350px;
-  width: 400px;
+  margin: 5px 5px;
+  height: 280px;
+  width: 330px;
   display: flex; 
   flex-direction: column; 
   background: rgba(255, 255, 255, 0.87);
@@ -233,8 +230,8 @@ nav a:hover {
 }
 
 .certification-item img {
-  height: 250px;
-  width: 400px; 
+  height: 180px;
+  width: 330px; 
   margin-bottom: 15px; 
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -258,15 +255,8 @@ nav a:hover {
   color: #555; 
 }
 
-/*  */
-
-
-
 #skills {
-  padding: 40px 70px;
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 150px 70px;
   margin: 20px 80px;
   text-align: center;
 }
@@ -280,7 +270,6 @@ nav a:hover {
 }
 
 .skills-list li {
-  background: rgba(255, 255, 255, 0.1);
   border-radius: 8px;
   padding: 20px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -291,20 +280,18 @@ nav a:hover {
 }
 
 .skills-list li:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  transform: translateY(-20px);
 }
 
 .skills-list img {
-  width: 40px;
-  height: 40px;
+  width: 90px;
+  height: 90px;
   margin-top: 10px;
 }
 
-.skills-list p {
-  color: #d9d9d9;
-  margin: 0;
-}
+
+
+/*  */
 
 #contact {
   padding: 40px 70px;
@@ -402,11 +389,10 @@ button[type="submit"]:hover {
 }
 
 footer {
-  background: rgba(255, 255, 255, 0.1);
-  color: #d9d9d9;
+  background:#050f30 ;
+  color: #bdbdbd;
   text-align: center;
   padding: 20px 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
   margin-top: 40px;
 }
 
