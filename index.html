@@ -7,11 +7,12 @@
     <link href="Styles/style.css" rel="stylesheet" type="text/css" />
     <link href="Images/logo.png" rel="icon" type="image/png" />
   </head>
+
   <body>
     <video autoplay muted loop id="background-video">
-      <source src="background.mp4" type="video/mp4">
+      <source src="background.mp4" type="video/mp4" />
       Your browser does not support the video tag.
-  </video>
+    </video>
     <header>
       <img id="logo" src="Images/logo.png" alt="my logo image" />
       <nav>
@@ -26,42 +27,98 @@
       <section id="about">
         <h1>Areej Aljuhani</h1>
         <p>
-          Enthusiastic software engineering student with a strong academic
+          Enthusiastic software engineering student at Jeddah university with a strong academic
           background and hands-on experience in developing mobile applications
           using Flutter. Proficient in UI/UX design with Figma, seeking to
           leverage my skills in a challenging software development role to
           contribute to innovative projects, with a foundational knowledge of
           machine learning to enhance app functionality
         </p>
-        <a href="CV-AreejAljuhani.pdf" target="_blank" class="cv-button">My CV <span class="arrow">&#x2192;</span></a>
+        <a href="CV-AreejAljuhani.pdf" target="_blank" class="cv-button"
+          >My CV <span class="arrow">&#x2192;</span></a
+        >
       </section>
-      <section id="education">
-        <h1>Education</h1>
-        <h2>Bachelor's degree in software engineering</h2>
-        <p>Jeddah University</p>
-        <p>2022 - present</p>
-      </section>
+
       <section id="projects">
         <h1>Projects</h1>
         <div class="project-grid">
-          <div class="project-item">
-            <h2>Tadawa</h2>
-            <p>
-              A medication and appointment tracker mobile application built with
-              Flutter and Firebase. Provides timely reminders to help users
-              manage their medication schedules and appointments, promoting
-              better health outcomes through improved adherence.
-            </p>
+          <div class="card" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="Images/Tadawa.png"
+              alt="Tadawa project image"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Tadawa</h5>
+              <p class="card-text">
+                A medication and appointment tracker mobile application built
+                with Flutter and Firebase. Provides timely reminders to help
+                users manage their medication schedules and appointments,
+                promoting better health outcomes through improved adherence.
+              </p>
+
+              <div class="container">
+                <div>
+                <img
+                  class="img-tech"
+                  src="Images/flutter.png"
+                  alt="flutter logo"
+                />
+                <img
+                  class="img-tech"
+                  src="Images/firebase.png"
+                  alt="firebase logo"
+                />
+              </div>
+                <a href="https://github.com/AreejAljuhani/Tadawa-app" target="_blank" class="btn btn-primary">&#x2192;</a>
+              </div>
+            </div>
           </div>
-          <div class="project-item">
-            <h2>Air Quality Detection Car</h2>
-            <p>
-              Developed an IoT-based air quality detection car using NodeMCU to
-              monitor harmful gases, temperature, and humidity in hazardous
-              areas. The system activates alerts when gas concentrations exceed
-              65 ppm and transmits data to Blynk and ThingSpeak, with automated
-              email notifications via IFTTT.
-            </p>
+
+          <div class="card" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="Images/IOT.png"
+              alt="Air Quality Detection Car image"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Air Quality Detection Car</h5>
+              <p class="card-text">
+                Developed an IoT-based air quality detection car using NodeMCU
+                to monitor harmful gases, temperature, and humidity in hazardous
+                areas. The system activates alerts when gas concentrations
+                exceed 65 ppm and transmits data to Blynk and ThingSpeak, with
+                automated email notifications via IFTTT.
+              </p>
+              <div class="container">
+                <img
+                  class="img-tech"
+                  src="Images/ardunio.png"
+                  alt="ardunio logo"
+                />
+                <a href="https://www.canva.com/design/DAGYJzy0BKY/DTdXCDlnBvIbLL_gE6tC9w/edit" target="_blank" class="btn btn-primary">&#x2192;</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="Images/GameZone.png"
+              alt="Game zone image"
+            />
+            <div class="card-body">
+              <h5 class="card-title">GameZone</h5>
+              <p class="card-text">
+                an online gaming tournaments application designed for e-sports
+                enthusiasts. Whether you're a tournament organizer or a player
+                eager to compete, GameZone offers a perfect platform
+              </p>
+              <div class="container">
+                <img class="img-tech" src="Images/figma.png" alt="figma logo" />
+                <a href="https://www.figma.com/design/3iRHoWNoeQK7K9GQyJfweH/GameZone?node-id=14-2665&t=7RV6kYyiqLWenoeQ-1" target="_blank" class="btn btn-primary">&#x2192;</a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -137,7 +194,6 @@
           <button type="submit">Send Message</button>
         </form>
         <div class="social-media">
-          <p>You can find me here</p>
           <a
             href="https://github.com/areejaljuhani"
             class="social-btn"

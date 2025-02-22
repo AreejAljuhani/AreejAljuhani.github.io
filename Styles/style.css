@@ -20,8 +20,8 @@ body {
   min-height: 100%;
   width: auto;
   height: auto;
-  z-index: -1; 
-  transform: translate(-50%, -50%); 
+  z-index: -1;
+  transform: translate(-50%, -50%);
 }
 
 header {
@@ -63,7 +63,7 @@ nav a:hover {
 
 #about {
   margin: 100px 100px;
-  padding: 80px 80px;
+  padding: 100px 80px;
   text-align: center;
 }
 
@@ -71,7 +71,7 @@ nav a:hover {
   font-size: 100px;
   margin-bottom: 20px;
   text-transform: uppercase;
-  text-shadow: 4px 4px 16px rgba(179, 179, 179,0.4);
+  text-shadow: 4px 4px 16px rgba(179, 179, 179, 0.4);
 }
 
 #about p {
@@ -110,92 +110,87 @@ nav a:hover {
   margin-left: 20px;
 }
 
-#education {
-  background: rgba(255, 255, 255, 0.1);
-  padding: 40px 70px;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  margin: 20px 80px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-#education:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-}
-
-#education h1 {
-  font-size: 36px;
-  margin-bottom: 20px;
-  text-align: center;
-  color: #ffffff;
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-}
-
-#education h2 {
-  font-size: 28px;
-  margin: 15px 0;
-  color: #e0e0e0;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  transition: color 0.3s ease;
-}
-
-#education h2:hover {
-  color: #f0f0f0;
-}
-
-#education p {
-  font-size: 18px;
-  margin-bottom: 10px;
-  text-align: center;
-  color: #d9d9d9;
-  line-height: 1.5;
-  transition: color 0.3s ease;
-}
-
-#education p:hover {
-  color: #ffffff;
-}
-
 #projects {
   padding: 40px 70px;
-  background: rgba(255, 255, 255, 0.05);
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  margin: 20px 80px;
+  margin: 100px 80px;
   text-align: center;
+}
+
+#projects h1 {
+  font-size: 30px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  text-shadow: 4px 4px 16px rgba(179, 179, 179, 0.4);
 }
 
 .project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-.project-item {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+.card {
+  margin: 15px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
 }
 
-.project-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(211, 211, 211, 0.3);
 }
 
-.project-item h2 {
-  color: #e0e0e0;
-  margin-bottom: 10px;
+.card-img-top {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 150px;
+  width: 288px;
 }
 
-.project-item p {
-  color: #d9d9d9;
-  line-height: 1.5;
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #010101;
+  margin-bottom: 0;
+}
+
+.card-body {
+  margin: 20px;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.btn-primary {
+  background-color: #040a1f;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.btn-primary:hover {
+  background-color: #0c2371;
+}
+
+.img-tech {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
 }
 
 #certifications {
@@ -353,11 +348,11 @@ button[type="submit"]:hover {
 }
 
 .social-btn {
-  background: transparent;
-  border: none;
+  background: white;
+  border: 1px solid white;
   cursor: pointer;
   padding: 10px;
-  border-radius: 6px;
+  border-radius: 40px;
   transition: background-color 0.3s ease, transform 0.3s ease;
   display: inline-flex;
   align-items: center;
