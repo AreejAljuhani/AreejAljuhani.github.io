@@ -118,7 +118,7 @@ nav a:hover {
   text-align: center;
 }
 
-#projects h1 {
+#projects h1 , #certifications h1 {
   font-size: 30px;
   margin-bottom: 40px;
   text-transform: uppercase;
@@ -193,43 +193,74 @@ nav a:hover {
   margin: 5px;
 }
 
+
+/*  */
+
 #certifications {
-  padding: 40px 70px;
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  margin: 20px 80px;
+  padding: 20px;
   text-align: center;
 }
 
 .certification-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px; 
+  justify-content: center;
+  margin: 10px 90px;
 }
 
 .certification-item {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 20px 20px;
+  height: 350px;
+  width: 400px;
+  display: flex; 
+  flex-direction: column; 
+  background: rgba(255, 255, 255, 0.87);
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
 }
 
 .certification-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(211, 211, 211, 0.3);
+  background-color: transparent;
 }
 
-.certification-item h2 {
-  color: #e0e0e0;
-  margin-bottom: 10px;
+.certification-item:hover h2{
+  color: white;
 }
 
-.certification-item p {
-  color: #d9d9d9;
-  line-height: 1.5;
+.certification-item img {
+  height: 250px;
+  width: 400px; 
+  margin-bottom: 15px; 
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
+
+.certification-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  margin: 0;
+}
+
+.certification-text h2 {
+  font-size: 1.1rem;
+  margin: 0; 
+  color: #010101;
+}
+
+.certification-text p {
+  font-size: 0.9rem;
+  color: #555; 
+}
+
+/*  */
+
+
 
 #skills {
   padding: 40px 70px;
