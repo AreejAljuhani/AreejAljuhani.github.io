@@ -4,35 +4,57 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Areej Aljuhani</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link href="Styles/style.css" rel="stylesheet" type="text/css" />
     <link href="Assets/Images/logo/logo.png" rel="icon" type="image/png" />
   </head>
 
   <body>
-    <video autoplay muted loop id="background-video">
-      <source src="Assets/background.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
-    <header>
-      <img id="logo" src="Assets/Images/logo/logo.png" alt="my logo image" />
-      <nav>
-        <a href="#">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#certifications">Certifications</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
+      <header class="d-flex justify-content-between ">
+        <img id="logo" src="Assets/Images/logo/logo.png" alt="my logo image"  />
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto"> 
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#certifications">Certifications</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
     <main>
       <section id="about">
         <h1>Areej Aljuhani</h1>
         <p>
-          Enthusiastic software engineering student at Jeddah university with a strong academic
-          background and hands-on experience in developing mobile applications
-          using Flutter. Proficient in UI/UX design with Figma, seeking to
-          leverage my skills in a challenging software development role to
-          contribute to innovative projects, with a foundational knowledge of
-          machine learning to enhance app functionality
+          Enthusiastic software engineering student at Jeddah university with a
+          strong academic background and hands-on experience in developing
+          mobile applications using Flutter. Proficient in UI/UX design with
+          Figma, seeking to leverage my skills in a challenging software
+          development role to contribute to innovative projects, with a
+          foundational knowledge of machine learning to enhance app
+          functionality
         </p>
         <a href="Assets/CV-AreejAljuhani.pdf" target="_blank" class="cv-button"
           >My CV <span class="arrow">&#x2192;</span></a
@@ -59,18 +81,23 @@
 
               <div class="container">
                 <div>
-                <img
-                  class="img-tech"
-                  src="Assets/Images/logo/flutter.png"
-                  alt="flutter logo"
-                />
-                <img
-                  class="img-tech"
-                  src="Assets/Images/logo/firebase.png"
-                  alt="firebase logo"
-                />
-              </div>
-                <a href="https://github.com/AreejAljuhani/Tadawa-app" target="_blank" class="btn btn-primary">&#x2192;</a>
+                  <img
+                    class="img-tech"
+                    src="Assets/Images/logo/flutter.png"
+                    alt="flutter logo"
+                  />
+                  <img
+                    class="img-tech"
+                    src="Assets/Images/logo/firebase.png"
+                    alt="firebase logo"
+                  />
+                </div>
+                <a
+                  href="https://github.com/AreejAljuhani/Tadawa-app"
+                  target="_blank"
+                  class="btn btn-primary"
+                  >&#x2192;</a
+                >
               </div>
             </div>
           </div>
@@ -96,7 +123,12 @@
                   src="Assets/Images/logo/ardunio.png"
                   alt="ardunio logo"
                 />
-                <a href="https://www.canva.com/design/DAGYJzy0BKY/DTdXCDlnBvIbLL_gE6tC9w/edit" target="_blank" class="btn btn-primary">&#x2192;</a>
+                <a
+                  href="https://www.canva.com/design/DAGYJzy0BKY/DTdXCDlnBvIbLL_gE6tC9w/edit"
+                  target="_blank"
+                  class="btn btn-primary"
+                  >&#x2192;</a
+                >
               </div>
             </div>
           </div>
@@ -115,8 +147,17 @@
                 eager to compete, GameZone offers a perfect platform
               </p>
               <div class="container">
-                <img class="img-tech" src="Assets/Images/logo/figma.png" alt="figma logo" />
-                <a href="https://www.figma.com/design/3iRHoWNoeQK7K9GQyJfweH/GameZone?node-id=14-2665&t=7RV6kYyiqLWenoeQ-1" target="_blank" class="btn btn-primary">&#x2192;</a>
+                <img
+                  class="img-tech"
+                  src="Assets/Images/logo/figma.png"
+                  alt="figma logo"
+                />
+                <a
+                  href="https://www.figma.com/design/3iRHoWNoeQK7K9GQyJfweH/GameZone?node-id=14-2665&t=7RV6kYyiqLWenoeQ-1"
+                  target="_blank"
+                  class="btn btn-primary"
+                  >&#x2192;</a
+                >
               </div>
             </div>
           </div>
@@ -127,58 +168,71 @@
         <h1>Certifications</h1>
         <div class="certification-grid">
           <div class="certification-item">
-            <img src="Assets/Images/certifications/machine-learning.png" alt="machine learning certification image">
+            <img
+              src="Assets/Images/certifications/machine-learning.png"
+              alt="machine learning certification image"
+            />
             <div class="certification-text">
-            <h2>Machine Learning Specialization</h2>
-            <p>Coursera - Andrew Ng, DeepLearning.AI</p>
-          </div>
+              <h2>Machine Learning Specialization</h2>
+              <p>Coursera - Andrew Ng, DeepLearning.AI</p>
+            </div>
           </div>
           <div class="certification-item">
-            <img src="Assets/Images/certifications/figma-designer.png" alt="UI/UX Product Designer certification image">
+            <img
+              src="Assets/Images/certifications/figma-designer.png"
+              alt="UI/UX Product Designer certification image"
+            />
             <div class="certification-text">
-            <h2>UI/UX Product Designer in Figma</h2>
-            <p>Udemy - Zero to mastery</p>
-          </div>
+              <h2>UI/UX Product Designer in Figma</h2>
+              <p>Udemy - Zero to mastery</p>
+            </div>
           </div>
 
           <div class="certification-item">
-            <img src="Assets/Images/certifications/sdaia.png" alt="Ai sdaia program certification image">
+            <img
+              src="Assets/Images/certifications/sdaia.png"
+              alt="Ai sdaia program certification image"
+            />
             <div class="certification-text">
-            <h2>Advanced pathway in AI</h2>
-            <p>Sdaia Academy</p>
-          </div>
+              <h2>Advanced pathway in AI</h2>
+              <p>Sdaia Academy</p>
+            </div>
           </div>
 
           <div class="certification-item">
-            <img src="Assets/Images/certifications/intro-cybersecurity.png" alt="Introduction to Cybersecurity certification image">
+            <img
+              src="Assets/Images/certifications/intro-cybersecurity.png"
+              alt="Introduction to Cybersecurity certification image"
+            />
             <div class="certification-text">
-            <h2>Introduction to Cybersecurity Essentials</h2>
-            <p>coursera - IBM</p>
-          </div>
+              <h2>Introduction to Cybersecurity Essentials</h2>
+              <p>coursera - IBM</p>
+            </div>
           </div>
 
           <div class="certification-item">
-            <img src="Assets/Images/certifications/ai-for-everyone.png" alt="AI for everyone certification image">
+            <img
+              src="Assets/Images/certifications/ai-for-everyone.png"
+              alt="AI for everyone certification image"
+            />
             <div class="certification-text">
-            <h2>AI for everyone</h2>
-            <p>coursera - Andrew Ng, DeepLearning.AI</p>
-          </div>
+              <h2>AI for everyone</h2>
+              <p>coursera - Andrew Ng, DeepLearning.AI</p>
+            </div>
           </div>
 
           <div class="certification-item">
-            <img src="Assets/Images/certifications/overview-iot.png" alt="Overview of IoT certification image">
+            <img
+              src="Assets/Images/certifications/overview-iot.png"
+              alt="Overview of IoT certification image"
+            />
             <div class="certification-text">
-            <h2>Overview of IoT technologies</h2>
-            <p>Huawei</p>
+              <h2>Overview of IoT technologies</h2>
+              <p>Huawei</p>
+            </div>
           </div>
-          </div>
-          
         </div>
       </section>
-
-
-
-
 
       <section id="skills">
         <h1>My Skills</h1>
@@ -202,7 +256,6 @@
             <img src="Assets/Images/logo/flutter.png" alt="Flutter logo" />
           </li>
           <li>
-
             <img src="Assets/Images/logo/firebase.png" alt="Firebase logo" />
           </li>
           <li>
@@ -215,49 +268,54 @@
       </section>
 
       <div class="contact-container">
-      <section id="contact">
-        <h1>Contact me</h1>
-        <form action="#" method="post">
-          <div>
-            <label for="name">Name </label>
-            <input type="text" id="name" name="name" required />
+        <section id="contact">
+          <h1>Contact me</h1>
+          <form action="#" method="post">
+            <div>
+              <label for="name">Name </label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div>
+              <label for="email">Email </label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div>
+              <label for="message">Message </label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                required
+              ></textarea>
+            </div>
+            <button id="btn-contact" type="submit">Send Message</button>
+          </form>
+          <div class="social-media">
+            <p>You can find me here</p>
+            <a
+              href="https://github.com/areejaljuhani"
+              class="social-btn"
+              target="_blank"
+            >
+              <img src="Assets/Images/logo/github.png" alt="GitHub logo" />
+            </a>
+            <a
+              href="https://linkedin.com/in/areejaljuhani"
+              class="social-btn"
+              target="_blank"
+            >
+              <img src="Assets/Images/logo/linkedin.png" alt="LinkedIn logo" />
+            </a>
+            <a
+              href="https://x.com/madebyareej"
+              class="social-btn"
+              target="_blank"
+            >
+              <img src="Assets/Images/logo/x.png" alt="X logo" />
+            </a>
           </div>
-          <div>
-            <label for="email">Email </label>
-            <input type="email" id="email" name="email" required />
-          </div>
-          <div>
-            <label for="message">Message </label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-          </div>
-          <button id="btn-contact" type="submit">Send Message</button>
-        </form>
-        <div class="social-media">
-          <p> You can find me here</p>
-          <a
-            href="https://github.com/areejaljuhani"
-            class="social-btn"
-            target="_blank"
-          >
-            <img src="Assets/Images/logo/github.png" alt="GitHub logo" />
-          </a>
-          <a
-            href="https://linkedin.com/in/areejaljuhani"
-            class="social-btn"
-            target="_blank"
-          >
-            <img src="Assets/Images/logo/linkedin.png" alt="LinkedIn logo" />
-          </a>
-          <a
-            href="https://x.com/madebyareej"
-            class="social-btn"
-            target="_blank"
-          >
-            <img src="Assets/Images/logo/x.png" alt="X logo" />
-          </a>
-        </div>
-      </section>
-    </div>
+        </section>
+      </div>
     </main>
     <footer><p>© 2025 Areej Aljuhani. All rights reserved.</p></footer>
   </body>
