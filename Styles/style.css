@@ -225,7 +225,7 @@ nav a:hover {
 
 .certification-item img {
   height: 180px;
-  width: 330px;
+  width: 100%;
   margin-bottom: 15px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -399,13 +399,6 @@ footer p {
 
 /* Media Queries */
 @media (max-width: 992px) {
-  #background-video {
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-  }
-
   #about,
   #projects,
   #certifications,
@@ -428,13 +421,6 @@ footer p {
 }
 
 @media (max-width: 768px) {
-  #background-video {
-    min-width: 100%;
-    min-height: auto;
-    width: auto;
-    height: auto;
-  }
-
   #logo {
     display: none;
   }
@@ -479,13 +465,6 @@ footer p {
 }
 
 @media (max-width: 576px) {
-  #background-video {
-    min-width: 100%;
-    min-height: auto;
-    width: auto;
-    height: auto;
-  }
-
   #about h1 {
     font-size: 40px;
   }
@@ -496,6 +475,24 @@ footer p {
 
   .certification-grid {
     grid-template-columns: 1fr;
+    margin: 10px;
+  }
+
+  .certification-item {
+    height: auto; 
+    width: 100%; 
+  }
+
+  .certification-item img {
+    height: auto; 
+  }
+
+  .certification-text h2 {
+    font-size: 1rem; 
+  }
+
+  .certification-text p {
+    font-size: 0.8rem;
   }
 
   .skills-list {
@@ -510,3 +507,5 @@ footer p {
     display: none;
   }
 }
+
+
