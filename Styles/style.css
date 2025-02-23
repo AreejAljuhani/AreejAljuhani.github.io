@@ -3,13 +3,14 @@ body {
   margin: 0;
   padding: 0;
   color: #f5f5f5;
-  background-color: #010101;
-  /* background: linear-gradient(
+  background: linear-gradient(
     to bottom,
     #010101,
-    #1a1a1a,
-    #010439
-  ); */
+    #010439,
+    #010101,
+    #010439,
+    #010101
+  );
 }
 
 #background-video {
@@ -299,11 +300,6 @@ nav a:hover {
   width: 550px;
   padding: 40px 30px;
   background-color: #010101;
-  background: linear-gradient(
-    to bottom,
-    #03010f,
-    #010439
-  );
   border-radius: 19px;
   margin: 20px;
   text-align: center;
@@ -359,7 +355,7 @@ form textarea:focus {
 }
 
 #btn-contact:hover {
-  background-color: #08081f;
+  background-color: #010439;
   color: #d9d9d9;
   transform: translateY(-4px);
 }
@@ -392,7 +388,7 @@ form textarea:focus {
 }
 
 footer {
-  background:#050f30 ;
+  background:#010101 ;
   color: #bdbdbd;
   text-align: center;
   padding: 20px 0;
@@ -402,4 +398,84 @@ footer {
 footer p {
   margin: 0;
   font-size: 14px;
+}
+
+
+/* Media Queries */
+@media (max-width: 992px) {
+  #about, #projects, #certifications, #skills {
+    margin: 50px 20px;
+    padding: 50px 20px;
+  }
+
+  #about h1 {
+    font-size: 50px;
+  }
+
+  #about p {
+    font-size: 16px;
+  }
+
+  .project-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  nav a {
+    margin: 5px 0;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  #contact {
+    width: 90%;
+  }
+
+  #contact h1 {
+    font-size: 24px;
+  }
+
+  form input,
+  form textarea {
+    width: 100%;
+  }
+
+  #btn-contact {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  #about h1 {
+    font-size: 40px;
+  }
+
+  #about p {
+    font-size: 14px;
+  }
+
+  .certification-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #contact {
+    padding: 20px;
+  }
 }
