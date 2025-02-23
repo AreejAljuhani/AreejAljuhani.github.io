@@ -1,5 +1,4 @@
 body {
-  font-family: Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
   color: #f5f5f5;
@@ -86,6 +85,7 @@ nav a:hover {
 .cv-button .arrow {
   margin-left: 10px;
   transition: margin-left 0.3s ease;
+  text-decoration: none;
 }
 
 .cv-button:hover {
@@ -107,7 +107,9 @@ nav a:hover {
   text-align: center;
 }
 
-#projects h1 , #certifications h1 , #skills h1{
+#projects h1,
+#certifications h1,
+#skills h1 {
   font-size: 30px;
   margin-bottom: 40px;
   text-transform: uppercase;
@@ -124,6 +126,7 @@ nav a:hover {
   margin: 15px;
   background-color: #ffffff;
   border-radius: 10px;
+  width: 18rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s;
 }
@@ -136,8 +139,10 @@ nav a:hover {
 .card-img-top {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  height: 150px;
-  width: 288px;
+  width: 100%; 
+  height: auto; 
+  max-height: 150px; 
+  object-fit: cover; 
 }
 
 .card-title {
@@ -189,8 +194,8 @@ nav a:hover {
 
 .certification-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); 
-  gap: 20px; 
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
   justify-content: center;
   margin: 10px 170px;
 }
@@ -199,8 +204,8 @@ nav a:hover {
   margin: 5px 5px;
   height: 280px;
   width: 330px;
-  display: flex; 
-  flex-direction: column; 
+  display: flex;
+  flex-direction: column;
   background: rgba(255, 255, 255, 0.87);
   border: 1px solid #ddd;
   border-radius: 10px;
@@ -214,34 +219,34 @@ nav a:hover {
   background-color: transparent;
 }
 
-.certification-item:hover h2{
+.certification-item:hover h2 {
   color: white;
 }
 
 .certification-item img {
   height: 180px;
-  width: 330px; 
-  margin-bottom: 15px; 
+  width: 330px;
+  margin-bottom: 15px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
 
-.certification-text{
+.certification-text {
   display: flex;
   flex-direction: column;
-  justify-content: center; 
+  justify-content: center;
   margin: 0;
 }
 
 .certification-text h2 {
   font-size: 1.1rem;
-  margin: 0; 
+  margin: 0;
   color: #010101;
 }
 
 .certification-text p {
   font-size: 0.9rem;
-  color: #555; 
+  color: #555;
 }
 
 #skills {
@@ -280,9 +285,9 @@ nav a:hover {
 
 .contact-container {
   display: flex;
-  justify-content: center; 
-  align-items: center; 
-  height: 100vh; 
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   padding: 20px;
 }
 
@@ -380,7 +385,7 @@ form textarea:focus {
 }
 
 footer {
-  background:#010101 ;
+  background: #010101;
   color: #bdbdbd;
   text-align: center;
   padding: 20px 0;
@@ -392,7 +397,6 @@ footer p {
   font-size: 14px;
 }
 
-
 /* Media Queries */
 @media (max-width: 992px) {
   #background-video {
@@ -402,7 +406,10 @@ footer p {
     height: auto;
   }
 
-  #about, #projects, #certifications, #skills {
+  #about,
+  #projects,
+  #certifications,
+  #skills {
     margin: 50px 20px;
     padding: 50px 20px;
   }
@@ -427,11 +434,11 @@ footer p {
     width: auto;
     height: auto;
   }
-  
+
   #logo {
-    display:none;
+    display: none;
   }
-  
+
   header {
     flex-direction: column;
     align-items: flex-start;
@@ -474,7 +481,7 @@ footer p {
 @media (max-width: 576px) {
   #background-video {
     min-width: 100%;
-    min-height: auto; 
+    min-height: auto;
     width: auto;
     height: auto;
   }
@@ -499,7 +506,7 @@ footer p {
     padding: 20px;
   }
 
-  #logo{
+  #logo {
     display: none;
   }
 }
