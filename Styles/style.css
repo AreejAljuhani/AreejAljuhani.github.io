@@ -459,7 +459,8 @@ footer p {
   #about,
   #projects,
   #certifications,
-  #skills {
+  #skills,
+  #education {
     margin: 50px 20px;
     padding: 50px 20px;
   }
@@ -475,9 +476,38 @@ footer p {
   .certification-grid {
     grid-template-columns: 1fr 2fr;
   }
+
+  #education img {
+    width: 150px; 
+    height: 150px; 
+  }
+
+  .edu-container {
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .edu-content {
+    margin-left: 0; 
+    text-align: center; 
+  }
+
+  .date {
+    display: block;
+    margin: 0;
+  }
 }
 
 @media (max-width: 768px) {
+
+  .edu-container {
+    flex-direction: column; 
+  }
+
+  .edu-content {
+    margin-left: 0; 
+  }
+  
   #logo {
     display: none;
   }
@@ -522,6 +552,15 @@ footer p {
 }
 
 @media (max-width: 576px) {
+  #education p {
+    font-size: 16px; 
+  }
+
+  #education img {
+    width: 120px;
+    height: 120px; 
+  }
+
   #about h1 {
     font-size: 40px;
   }
